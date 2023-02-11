@@ -7,7 +7,7 @@ import { ReviewsInfoList } from './Reviews.style';
 
 //компонент Reviews, інформація про огляди. Рендериться на сторінці MovieDetails.
 
-export const Reviews = () => {
+const Reviews = () => {
   const { movieId } = useParams();
   const [reviewsInfo, setReviewsInfo] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -50,3 +50,5 @@ export const Reviews = () => {
     </>
   );
 };
+
+export default Reviews;

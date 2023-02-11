@@ -7,7 +7,7 @@ import {
 } from '../Layout/Styles';
 
 
-export const NotFound = () => {
+const NotFound = () => {
     const location = useLocation();
     const backLinkHref = useRef(location.state?.from);
 
@@ -22,3 +22,5 @@ export const NotFound = () => {
     </Container>
   );
 };
+
+export default NotFound;
