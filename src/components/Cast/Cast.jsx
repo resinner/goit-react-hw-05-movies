@@ -7,7 +7,7 @@ import { CastList, NoImage } from './Cast.styles';
 
 //  компонент Cast, інформація про акторський склад. Рендериться на сторінці MovieDetails.
 
-export const Cast = () => {
+const Cast = () => {
   const { movieId } = useParams();
   const [castInfo, setCastInfo] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -63,3 +63,5 @@ export const Cast = () => {
     </>
   );
 };
+
+export default Cast;

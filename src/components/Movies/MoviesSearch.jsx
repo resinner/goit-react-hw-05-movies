@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams, useLocation } from 'react-router-dom';
 
-import { Container, Form, MoviesList } from '../../Layout/Styles';
-import { moviesQueryRequest } from '../../../api/api';
+import { Container, Form, MoviesList } from '../Layout/Styles';
+import { moviesQueryRequest } from '../../api/api';
 
 // сторінка пошуку кінофільмів за ключовим словом.
 
-export const MoviesSearch = () => {
+const MoviesSearch = () => {
   const [moviesFound, setMoviesFound] = useState([]);
   const [noResult, setNoResult] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
@@ -44,6 +44,7 @@ export const MoviesSearch = () => {
     };
   }, [query]);
 
+
   return (
     <Container>
       <Form onSubmit={handlerQuery}>
@@ -71,3 +72,5 @@ export const MoviesSearch = () => {
     </Container>
   );
 };
+
+export default MoviesSearch;

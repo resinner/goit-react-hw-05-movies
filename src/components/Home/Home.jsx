@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
-import { trendingmoviesRequest } from "../../api/api";
 import { Container, MoviesList } from '../Layout/Styles';
+import { trendingmoviesRequest } from "../../api/api";
 
-export const Home = () => {
+const Home = () => {
   const [moviesTrand, setMoviesTrend] = useState([]);
 
   useEffect(() => {

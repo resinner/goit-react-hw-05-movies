@@ -13,7 +13,7 @@ import { movieInfoRequest } from '../../api/api';
 import { AboutMovie } from '../AboutMovie/AboutMovie';
 // import { EventsLoader } from 'components/Loader';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const [movieInfo, setMovieInfo] = useState([]);
     const { movieId } = useParams();
       const location = useLocation();
@@ -73,3 +73,5 @@ export const MovieDetails = () => {
      </Container>
    );
 };
+
+export default MovieDetails;
